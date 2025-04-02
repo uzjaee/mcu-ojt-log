@@ -20,7 +20,7 @@ Conductive Humidity Sensor 제작을 위한 MCU 기반 회로 구성 및 펌웨�
 
 ## 🗂 학습 기록
 
-| 날짜 | 주제 | 설명 |
-|------|------|------|
-| Day 1 | MCC, LED 제어 | MCC 핀 설정, 회로도 보기, LED 켜기 |
-| Day 2 | ADC, EUART, Timer , MTouch | 시리얼 통신으로 값 출력, 타이머로 시간 측정 |
+| 날짜 | 주제 | 설명 | 정리 |
+|------|------|------|-------|
+| Day 1 | MCC, LED 제어 | MCC 핀 설정, 회로도 보기, LED 켜기 |[링크](./docs/1day.md) |
+| Day 2 | ADC, EUART, Timer , MTouch | 시리얼 통신으로 값 출력, 타이머로 시간 측정 | [링크](./docs/2day.md) | 
