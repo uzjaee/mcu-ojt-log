@@ -11,6 +11,10 @@
 
 ## 🎯 목표
 
+
+<img src="https://github.com/user-attachments/assets/aeff7daa-02b5-42c5-92fd-64aa335663c3" alt="대체 텍스트" width="300"/>
+
+
 Conductive Humidity Sensor 제작을 위한 MCU 기반 회로 구성 및 펌웨어 구현 기초를 익히는 것이 목표입니다.  
 → 센서 값 수집(ADC), 데이터 전송 및 상태 출력(EUART)) 등을 단계적으로 실습합니다.
 
