@@ -1,0 +1,1530 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"82 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[e E11928 mtouch_button_names `uc
+Button0 0
+]
+[e E11866 mtouch_sensor_names `uc
+Sensor_ANC3 0
+]
+[e E11991 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressed 2
+]
+"267
+[e E11995 mtouch_button_hysteresis_thresholds `uc
+HYST_50_PERCENT 1
+HYST_25_PERCENT 2
+HYST_12_5_PERCENT 3
+HYST_6_25_PERCENT 4
+HYST_MAX 5
+]
+"115 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/adcc.c
+[e E11700 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+]
+"147 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[e E11929 mtouch_sensor_names `uc
+Sensor_ANC3 0
+]
+"199
+[e E11931 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+MTOUCH_SENSOR_ERROR_tooManyRetries -4
+MTOUCH_SENSOR_ERROR_scanOverrun -5
+MTOUCH_SENSOR_ERROR_interruptedScan -6
+]
+"66 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_api_example.c
+[e E98 mtouch_button_names `uc
+Button0 0
+]
+"91 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_datastreamer.c
+[e E104 mtouch_button_names `uc
+Button0 0
+]
+"116
+[e E36 mtouch_sensor_names `uc
+Sensor_ANC3 0
+]
+"1 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+[v i1_abs abs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.4v  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"49 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"64 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"307
+[v _ADCC_ThresholdISR ADCC_ThresholdISR `(v  1 e 1 0 ]
+"316
+[v _ADCC_SetADTIInterruptHandler ADCC_SetADTIInterruptHandler `(v  1 e 1 0 ]
+"319
+[v _ADCC_DefaultInterruptHandler ADCC_DefaultInterruptHandler `(v  1 e 1 0 ]
+"88 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"173
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"197
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"216
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"240
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+"250
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"252
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"260
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"264
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"268
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"272
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"276
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"280
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"82 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+"102
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+"141
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+"153
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+"143 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+"155
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"173
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"184
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"201
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"221
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"257
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"281
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"285
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"304
+[v _MTOUCH_Button_Threshold_Get MTOUCH_Button_Threshold_Get `(uc  1 e 1 0 ]
+"321
+[v _MTOUCH_Button_Scaling_Get MTOUCH_Button_Scaling_Get `(uc  1 e 1 0 ]
+"354
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+"371
+[v _MTOUCH_Button_Deviation_Get MTOUCH_Button_Deviation_Get `(c  1 e 1 0 ]
+"379
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"420
+[v _MTOUCH_Button_Reading_Get MTOUCH_Button_Reading_Get `(us  1 e 2 0 ]
+"428
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"442
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+"455
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"461
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"477
+[v _MTOUCH_Button_Baseline_Get MTOUCH_Button_Baseline_Get `(us  1 e 2 0 ]
+"485
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
+"507
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"60 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_datastreamer.c
+[v _MTOUCH_DataStreamer_Initialize MTOUCH_DataStreamer_Initialize `(v  1 e 1 0 ]
+"64
+[v _datastreamer_output_byte datastreamer_output_byte `T(v  1 e 1 0 ]
+"69
+[v _MTOUCH_DataStreamer_Service MTOUCH_DataStreamer_Service `(v  1 e 1 0 ]
+"199 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E11931  1 e 1 0 ]
+"208
+[v _Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 Sensor_SetTrisBit ]
+[v i1_Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 i1_Sensor_SetTrisBit ]
+"225
+[v _MTOUCH_Sensor_ADCC_Initialize MTOUCH_Sensor_ADCC_Initialize `(v  1 e 1 0 ]
+"268
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"281
+[v _MTOUCH_Sensor_isSamplingComplete MTOUCH_Sensor_isSamplingComplete `(a  1 e 1 0 ]
+"301
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+"345
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"357
+[v _Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 Sensor_scheduleNextScan ]
+[v i1_Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 i1_Sensor_scheduleNextScan ]
+"419
+[v _Sensor_autoCalibration Sensor_autoCalibration `(E11931  1 s 1 Sensor_autoCalibration ]
+"469
+[v _MTOUCH_Sensor_postAcquisitionProcess MTOUCH_Sensor_postAcquisitionProcess `(v  1 e 1 0 ]
+"489
+[v _ADCC_ThresholdISR_mTouch ADCC_ThresholdISR_mTouch `(v  1 e 1 0 ]
+"502
+[v _MTOUCH_Sensor_Service MTOUCH_Sensor_Service `T(v  1 s 1 MTOUCH_Sensor_Service ]
+"560
+[v _Sensor_setSamplePeriod Sensor_setSamplePeriod `(v  1 s 1 Sensor_setSamplePeriod ]
+"572
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+"591
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"608
+[v _medianFilter medianFilter `(us  1 s 2 medianFilter ]
+"649
+[v _Sensor_FrequencyHopping Sensor_FrequencyHopping `(v  1 s 1 Sensor_FrequencyHopping ]
+"663
+[v _Sensor_FrequencyHopping_Autotune_Process Sensor_FrequencyHopping_Autotune_Process `(v  1 s 1 Sensor_FrequencyHopping_Autotune_Process ]
+"740
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"761
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"767
+[v _MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+[v i1_MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+"823
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+"831
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+"839
+[v _Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 Sensor_isCalibrated ]
+[v i1_Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 i1_Sensor_isCalibrated ]
+"844
+[v _Sensor_setCalibrated Sensor_setCalibrated `(v  1 s 1 Sensor_setCalibrated ]
+"850
+[v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `(v  1 s 1 Sensor_setCalibratAcqTime ]
+"857
+[v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 Sensor_isCalibratingAcqTime ]
+[v i1_Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 i1_Sensor_isCalibratingAcqTime ]
+"870
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"879
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+[v i1_MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+"887
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"892
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"897
+[v _MTOUCH_Sensor_isSampling MTOUCH_Sensor_isSampling `(a  1 e 1 0 ]
+"908
+[v _MTOUCH_Sensor_AdditionalCap_Get MTOUCH_Sensor_AdditionalCap_Get `(uc  1 e 1 0 ]
+"916
+[v _MTOUCH_Sensor_AcquisitionTime_Get MTOUCH_Sensor_AcquisitionTime_Get `(uc  1 e 1 0 ]
+"932
+[v _MTOUCH_Sensor_Oversampling_Get MTOUCH_Sensor_Oversampling_Get `(uc  1 e 1 0 ]
+"940
+[v _MTOUCH_Sensor_Oversampling_Set MTOUCH_Sensor_Oversampling_Set `(v  1 e 1 0 ]
+"55 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S87 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"364 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16F1xxxx_DFP/1.24.387/xc8\pic\include\proc\pic16f18855.h
+[u S92 . 1 `S87 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES92  1 e 1 @11 ]
+"591
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"653
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"715
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+[s S958 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"732
+[u S967 . 1 `S958 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES967  1 e 1 @19 ]
+"777
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"839
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"901
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1538
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1558
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1572
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @142 ]
+"1642
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @143 ]
+"1712
+[v _ADACC ADACC `VEus  1 e 2 @144 ]
+"1719
+[v _ADACCL ADACCL `VEuc  1 e 1 @144 ]
+"1789
+[v _ADACCH ADACCH `VEuc  1 e 1 @145 ]
+"1859
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S675 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1895
+[s S683 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S687 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S689 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S694 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
+]
+[u S699 . 1 `S675 1 . 1 0 `S683 1 . 1 0 `S687 1 . 1 0 `S689 1 . 1 0 `S694 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES699  1 e 1 @147 ]
+"1970
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+[s S829 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"1984
+[u S835 . 1 `S829 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES835  1 e 1 @148 ]
+"2009
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+[s S765 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"2031
+[s S770 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+]
+[u S778 . 1 `S765 1 . 1 0 `S770 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES778  1 e 1 @149 ]
+"2086
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+[s S736 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+"2107
+[s S744 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[u S748 . 1 `S736 1 . 1 0 `S744 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES748  1 e 1 @150 ]
+"2157
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+[s S797 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 ADMACT 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"2177
+[s S804 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+]
+[u S808 . 1 `S797 1 . 1 0 `S804 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES808  1 e 1 @151 ]
+"2227
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2285
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2337
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2378
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2430
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2500
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2570
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2628
+[v _ADCNT ADCNT `VEuc  1 e 1 @268 ]
+"2698
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2775
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2845
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2922
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2992
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3069
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3139
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+"3209
+[v _ADFLTR ADFLTR `VEus  1 e 2 @276 ]
+"3216
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @276 ]
+"3286
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @277 ]
+"3363
+[v _ADERRL ADERRL `VEuc  1 e 1 @278 ]
+"3433
+[v _ADERRH ADERRH `VEuc  1 e 1 @279 ]
+"3503
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"3557
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"3623
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"3677
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"3731
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S1586 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3757
+[u S1595 . 1 `S1586 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES1595  1 e 1 @285 ]
+"3911
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S1564 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3937
+[u S1573 . 1 `S1564 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES1573  1 e 1 @286 ]
+"4091
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+[s S175 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 CSWIF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"21036
+[u S181 . 1 `S175 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES181  1 e 1 @1805 ]
+[s S139 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+"21109
+[u S146 . 1 `S139 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES146  1 e 1 @1807 ]
+[s S160 . 1 `uc 1 ADIE 1 0 :1:0 
+`uc 1 ADTIE 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 CSWIE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+"21458
+[u S166 . 1 `S160 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES166  1 e 1 @1815 ]
+[s S122 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 SSP2IE 1 0 :1:2 
+`uc 1 BCL2IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+"21531
+[u S129 . 1 `S122 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES129  1 e 1 @1817 ]
+"21833
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"21890
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"21961
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"22006
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"22062
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"22113
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"23184
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23324
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"23421
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23472
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"23530
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"32809
+[v _RC7PPS RC7PPS `VEuc  1 e 1 @3879 ]
+"32859
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"32921
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"32983
+[v _ODCONA ODCONA `VEuc  1 e 1 @3898 ]
+"33045
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3899 ]
+"33107
+[v _INLVLA INLVLA `VEuc  1 e 1 @3900 ]
+"33479
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"33541
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"33603
+[v _ODCONB ODCONB `VEuc  1 e 1 @3909 ]
+"33665
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3910 ]
+"33727
+[v _INLVLB INLVLB `VEuc  1 e 1 @3911 ]
+"34099
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34161
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"34223
+[v _ODCONC ODCONC `VEuc  1 e 1 @3920 ]
+"34285
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3921 ]
+"34347
+[v _INLVLC INLVLC `VEuc  1 e 1 @3922 ]
+"34719
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"34740
+[v _INLVLE INLVLE `VEuc  1 e 1 @3944 ]
+"37397
+"37397
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"58 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/adcc.c
+[v _ADCC_ADTI_InterruptHandler ADCC_ADTI_InterruptHandler `*.37(v  1 e 2 0 ]
+"62 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusartTxBuffer eusartTxBuffer `VE[8]uc  1 e 8 0 ]
+"65
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
+[s S1486 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"70
+[u S1491 . 1 `S1486 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[8]S1491  1 e 8 0 ]
+"71
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"72
+[v _eusartRxLastError eusartRxLastError `VES1491  1 e 1 0 ]
+"77
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"78
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"80
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"81
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"82
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"52 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch.c
+[v _mtouch_time_toScan mtouch_time_toScan `a  1 s 1 mtouch_time_toScan ]
+"53
+[v _mtouch_request_init mtouch_request_init `a  1 s 1 mtouch_request_init ]
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"82 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `DC[1]S231  1 e 16 0 ]
+"94
+[v _mtouch_button mtouch_button `[1]S231  1 s 16 mtouch_button ]
+"121
+[v _callback_pressed callback_pressed `*.37(v  1 s 2 callback_pressed ]
+"122
+[v _callback_notPressed callback_notPressed `*.37(v  1 s 2 callback_notPressed ]
+"130
+[v _Button_StateMachine Button_StateMachine `[3]*.37(v  1 e 6 0 ]
+"51 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_datastreamer.c
+[v _data data `[19]uc  1 e 19 0 ]
+"147 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _callback_sampled callback_sampled `*.37(v  1 s 2 callback_sampled ]
+"154
+[v _sensor_medianBuffer sensor_medianBuffer `[1][3]us  1 s 6 sensor_medianBuffer ]
+"155
+[v _packet_sample packet_sample `[1]us  1 s 2 packet_sample ]
+"156
+[v _currentScanSensor currentScanSensor `E11929  1 s 1 currentScanSensor ]
+"157
+[v _sampling_flag sampling_flag `a  1 s 1 sampling_flag ]
+"158
+[v _scanInterrupted scanInterrupted `VEa  1 s 1 scanInterrupted ]
+"159
+[v _lowpowerActivated lowpowerActivated `a  1 s 1 lowpowerActivated ]
+"172
+[v _freq_index freq_index `uc  1 s 1 freq_index ]
+"173
+[v _freq_hop freq_hop `[3]uc  1 s 3 freq_hop ]
+"174
+[v _sample_delay sample_delay `uc  1 s 1 sample_delay ]
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"181
+[v _mtouch_sensor_init mtouch_sensor_init `DC[1]S925  1 e 9 0 ]
+"192
+[v _mtouch_sensor mtouch_sensor `[1]S925  1 s 9 mtouch_sensor ]
+"49 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"76
+} 0
+"50 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"74
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"55 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"116
+} 0
+"60 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"88 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"130
+} 0
+"276
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"278
+} 0
+"280
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"282
+} 0
+"268
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"270
+} 0
+"264
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"266
+} 0
+"272
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"274
+} 0
+"64 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"113
+} 0
+"102 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+{
+"134
+} 0
+"153
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+{
+"158
+} 0
+"141
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+{
+"146
+} 0
+"281 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+{
+"284
+} 0
+"285
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Tick_helper@button button `*.4S231  1 a 1 wreg ]
+[v Button_Tick_helper@button button `*.4S231  1 a 1 wreg ]
+"288
+"285
+[v Button_Tick_helper@button button `*.4S231  1 a 1 2 ]
+"296
+} 0
+"301 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+{
+"313
+} 0
+"649
+[v _Sensor_FrequencyHopping Sensor_FrequencyHopping `(v  1 s 1 Sensor_FrequencyHopping ]
+{
+"655
+} 0
+"560
+[v _Sensor_setSamplePeriod Sensor_setSamplePeriod `(v  1 s 1 Sensor_setSamplePeriod ]
+{
+"566
+} 0
+"663
+[v _Sensor_FrequencyHopping_Autotune_Process Sensor_FrequencyHopping_Autotune_Process `(v  1 s 1 Sensor_FrequencyHopping_Autotune_Process ]
+{
+"668
+[v Sensor_FrequencyHopping_Autotune_Process@maxVariance maxVariance `us  1 a 2 14 ]
+[v Sensor_FrequencyHopping_Autotune_Process@variance variance `us  1 a 2 12 ]
+"666
+[v Sensor_FrequencyHopping_Autotune_Process@frequencyIndex frequencyIndex `uc  1 a 1 18 ]
+"667
+[v Sensor_FrequencyHopping_Autotune_Process@selectedFrequency selectedFrequency `uc  1 a 1 17 ]
+"665
+[v Sensor_FrequencyHopping_Autotune_Process@sensor sensor `E11929  1 a 1 16 ]
+"667
+[v Sensor_FrequencyHopping_Autotune_Process@newfrequencyFound newfrequencyFound `uc  1 a 1 11 ]
+"671
+[v Sensor_FrequencyHopping_Autotune_Process@varianceOverLimitCounter varianceOverLimitCounter `[3]uc  1 s 3 varianceOverLimitCounter ]
+"733
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 4 ]
+"4
+} 0
+"469 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_postAcquisitionProcess MTOUCH_Sensor_postAcquisitionProcess `(v  1 e 1 0 ]
+{
+"471
+[v MTOUCH_Sensor_postAcquisitionProcess@name name `E11929  1 a 1 15 ]
+"481
+} 0
+"591
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_RawSample_Update@sensor sensor `*.4S925  1 a 1 wreg ]
+"593
+[v Sensor_RawSample_Update@result result `us  1 a 2 11 ]
+"591
+[v Sensor_RawSample_Update@sensor sensor `*.4S925  1 a 1 wreg ]
+"593
+"591
+[v Sensor_RawSample_Update@sensor sensor `*.4S925  1 a 1 13 ]
+"605
+} 0
+"608
+[v _medianFilter medianFilter `(us  1 s 2 medianFilter ]
+{
+[v medianFilter@sensor sensor `E11929  1 a 1 wreg ]
+[v medianFilter@sensor sensor `E11929  1 a 1 wreg ]
+"610
+[v medianFilter@bufferIndex bufferIndex `[1]uc  1 s 1 bufferIndex ]
+"612
+[v medianFilter@sensor sensor `E11929  1 a 1 10 ]
+"642
+} 0
+"740
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+[v Sensor_DefaultCallback@sensor sensor `E11929  1 p 1 0 ]
+} 0
+"281
+[v _MTOUCH_Sensor_isSamplingComplete MTOUCH_Sensor_isSamplingComplete `(a  1 e 1 0 ]
+{
+"283
+[v MTOUCH_Sensor_isSamplingComplete@sensor sensor `E11929  1 a 1 11 ]
+"298
+} 0
+"357
+[v _Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 Sensor_scheduleNextScan ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"359
+[v Sensor_scheduleNextScan@sensor sensor `*.4S925  1 a 1 9 ]
+"360
+[v Sensor_scheduleNextScan@skipScan skipScan `a  1 a 1 8 ]
+"361
+[v Sensor_scheduleNextScan@state state `a  1 a 1 7 ]
+"410
+} 0
+"857
+[v _Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 Sensor_isCalibratingAcqTime ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S925  1 a 1 wreg ]
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S925  1 a 1 wreg ]
+"859
+"857
+[v Sensor_isCalibratingAcqTime@sensor sensor `*.4S925  1 a 1 0 ]
+"861
+} 0
+"839
+[v _Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 Sensor_isCalibrated ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_isCalibrated@sensor sensor `*.4S925  1 a 1 wreg ]
+[v Sensor_isCalibrated@sensor sensor `*.4S925  1 a 1 wreg ]
+"841
+"839
+[v Sensor_isCalibrated@sensor sensor `*.4S925  1 a 1 1 ]
+"842
+} 0
+"208
+[v _Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 Sensor_SetTrisBit ]
+{
+[v Sensor_SetTrisBit@sensor sensor `E11929  1 a 1 wreg ]
+[v Sensor_SetTrisBit@sensor sensor `E11929  1 a 1 wreg ]
+[v Sensor_SetTrisBit@TrisBit TrisBit `uc  1 p 1 0 ]
+[v Sensor_SetTrisBit@sensor sensor `E11929  1 a 1 3 ]
+"217
+} 0
+"767
+[v _MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E11929  1 a 1 wreg ]
+"769
+[v MTOUCH_Sensor_isEnabled@sensor sensor `E11929  1 a 1 4 ]
+"773
+} 0
+"897
+[v _MTOUCH_Sensor_isSampling MTOUCH_Sensor_isSampling `(a  1 e 1 0 ]
+{
+"900
+} 0
+"82 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"345 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"349
+} 0
+"225
+[v _MTOUCH_Sensor_ADCC_Initialize MTOUCH_Sensor_ADCC_Initialize `(v  1 e 1 0 ]
+{
+"265
+} 0
+"316 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/adcc.c
+[v _ADCC_SetADTIInterruptHandler ADCC_SetADTIInterruptHandler `(v  1 e 1 0 ]
+{
+[v ADCC_SetADTIInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"318
+} 0
+"870 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"872
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.4S925  1 a 1 2 ]
+"877
+} 0
+"268
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+{
+"270
+[v MTOUCH_Sensor_InitializeAll@sensor sensor `E11929  1 a 1 11 ]
+"278
+} 0
+"199
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E11931  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Initialize@sensor sensor `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_Initialize@sensor sensor `E11929  1 a 1 wreg ]
+"201
+[v MTOUCH_Sensor_Initialize@sensor sensor `E11929  1 a 1 5 ]
+"206
+} 0
+"887
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S925  1 a 1 wreg ]
+[v Sensor_Sampled_Reset@sensor sensor `*.4S925  1 a 1 wreg ]
+"889
+"887
+[v Sensor_Sampled_Reset@sensor sensor `*.4S925  1 a 1 0 ]
+"890
+} 0
+"761
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Enable@sensor sensor `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_Enable@sensor sensor `E11929  1 a 1 wreg ]
+"763
+[v MTOUCH_Sensor_Enable@sensor sensor `E11929  1 a 1 4 ]
+"765
+} 0
+"60 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_datastreamer.c
+[v _MTOUCH_DataStreamer_Initialize MTOUCH_DataStreamer_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"155 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+{
+"157
+[v MTOUCH_Button_InitializeAll@button button `E11928  1 a 1 11 ]
+"165
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.4v  1 e 2 0 ]
+{
+[v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
+"8
+[v memcpy@s s `*.25DCuc  1 a 2 5 ]
+"7
+[v memcpy@d d `*.4uc  1 a 1 8 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 7 ]
+"4
+[v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
+[v memcpy@s1 s1 `*.25DCv  1 p 2 0 ]
+[v memcpy@n n `ui  1 p 2 2 ]
+"11
+[v memcpy@d1 d1 `*.4v  1 a 1 9 ]
+"18
+} 0
+"69 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_datastreamer.c
+[v _MTOUCH_DataStreamer_Service MTOUCH_DataStreamer_Service `(v  1 e 1 0 ]
+{
+"73
+[v MTOUCH_DataStreamer_Service@u16temp_output u16temp_output `us  1 a 2 14 ]
+"75
+[v MTOUCH_DataStreamer_Service@count_bytes_out count_bytes_out `VEuc  1 a 1 16 ]
+"71
+[v MTOUCH_DataStreamer_Service@i i `uc  1 a 1 13 ]
+"72
+[v MTOUCH_DataStreamer_Service@sequence sequence `uc  1 s 1 sequence ]
+"126
+} 0
+"64
+[v _datastreamer_output_byte datastreamer_output_byte `T(v  1 e 1 0 ]
+{
+[v datastreamer_output_byte@data data `uc  1 a 1 wreg ]
+[v datastreamer_output_byte@data data `uc  1 a 1 wreg ]
+"66
+[v datastreamer_output_byte@data data `uc  1 a 1 2 ]
+"67
+} 0
+"173 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/eusart.c
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 1 ]
+"194
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"908 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_AdditionalCap_Get MTOUCH_Sensor_AdditionalCap_Get `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_AdditionalCap_Get@name name `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_AdditionalCap_Get@name name `E11929  1 a 1 wreg ]
+"910
+[v MTOUCH_Sensor_AdditionalCap_Get@name name `E11929  1 a 1 4 ]
+"914
+} 0
+"916
+[v _MTOUCH_Sensor_AcquisitionTime_Get MTOUCH_Sensor_AcquisitionTime_Get `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_AcquisitionTime_Get@name name `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_AcquisitionTime_Get@name name `E11929  1 a 1 wreg ]
+"918
+[v MTOUCH_Sensor_AcquisitionTime_Get@name name `E11929  1 a 1 4 ]
+"922
+} 0
+"354 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+{
+[v MTOUCH_Button_isPressed@name name `E11928  1 a 1 wreg ]
+[v MTOUCH_Button_isPressed@name name `E11928  1 a 1 wreg ]
+"356
+[v MTOUCH_Button_isPressed@name name `E11928  1 a 1 1 ]
+"360
+} 0
+"304
+[v _MTOUCH_Button_Threshold_Get MTOUCH_Button_Threshold_Get `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Button_Threshold_Get@name name `E11928  1 a 1 wreg ]
+[v MTOUCH_Button_Threshold_Get@name name `E11928  1 a 1 wreg ]
+"306
+[v MTOUCH_Button_Threshold_Get@name name `E11928  1 a 1 1 ]
+"310
+} 0
+"321
+[v _MTOUCH_Button_Scaling_Get MTOUCH_Button_Scaling_Get `(uc  1 e 1 0 ]
+{
+[v MTOUCH_Button_Scaling_Get@name name `E11928  1 a 1 wreg ]
+[v MTOUCH_Button_Scaling_Get@name name `E11928  1 a 1 wreg ]
+"323
+[v MTOUCH_Button_Scaling_Get@name name `E11928  1 a 1 1 ]
+"327
+} 0
+"420
+[v _MTOUCH_Button_Reading_Get MTOUCH_Button_Reading_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Button_Reading_Get@name name `E11928  1 a 1 wreg ]
+[v MTOUCH_Button_Reading_Get@name name `E11928  1 a 1 wreg ]
+"422
+[v MTOUCH_Button_Reading_Get@name name `E11928  1 a 1 3 ]
+"426
+} 0
+"371
+[v _MTOUCH_Button_Deviation_Get MTOUCH_Button_Deviation_Get `(c  1 e 1 0 ]
+{
+[v MTOUCH_Button_Deviation_Get@name name `E11928  1 a 1 wreg ]
+[v MTOUCH_Button_Deviation_Get@name name `E11928  1 a 1 wreg ]
+"373
+[v MTOUCH_Button_Deviation_Get@name name `E11928  1 a 1 1 ]
+"377
+} 0
+"477
+[v _MTOUCH_Button_Baseline_Get MTOUCH_Button_Baseline_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Button_Baseline_Get@name name `E11928  1 a 1 wreg ]
+[v MTOUCH_Button_Baseline_Get@name name `E11928  1 a 1 wreg ]
+"479
+[v MTOUCH_Button_Baseline_Get@name name `E11928  1 a 1 10 ]
+"483
+} 0
+"485
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
+{
+[v Button_Baseline_Get_helper@name name `E11928  1 a 1 wreg ]
+[v Button_Baseline_Get_helper@name name `E11928  1 a 1 wreg ]
+"487
+[v Button_Baseline_Get_helper@name name `E11928  1 a 1 7 ]
+"488
+} 0
+"173
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"175
+[v MTOUCH_Button_ServiceAll@button button `E11928  1 a 1 21 ]
+"182
+} 0
+"184
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E11928  1 a 1 wreg ]
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"186
+[v Button_Service@button button `*.4S231  1 a 1 19 ]
+"184
+[v Button_Service@name name `E11928  1 a 1 wreg ]
+"186
+[v Button_Service@name name `E11928  1 a 1 18 ]
+"199
+} 0
+"879 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E11929  1 a 1 wreg ]
+"881
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E11929  1 a 1 4 ]
+"885
+} 0
+"831
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E11929  1 a 1 wreg ]
+"833
+[v MTOUCH_Sensor_isCalibrated@sensor sensor `E11929  1 a 1 5 ]
+"837
+} 0
+"221 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.4S231  1 p 1 12 ]
+"255
+} 0
+"201
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.4S231  1 p 1 12 ]
+"220
+} 0
+"257
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.4S231  1 p 1 12 ]
+"274
+} 0
+"143
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Initialize@name name `E11928  1 a 1 wreg ]
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"145
+[v MTOUCH_Button_Initialize@button button `*.4S231  1 a 1 7 ]
+"143
+[v MTOUCH_Button_Initialize@name name `E11928  1 a 1 wreg ]
+"145
+[v MTOUCH_Button_Initialize@name name `E11928  1 a 1 6 ]
+"153
+} 0
+"823 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E11929  1 a 1 wreg ]
+"825
+[v MTOUCH_Sensor_Calibrate@sensor sensor `E11929  1 a 1 4 ]
+"829
+} 0
+"507 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+[v Button_DefaultCallback@button button `E11928  1 p 1 0 ]
+} 0
+"461
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.4S231  1 a 1 wreg ]
+[v Button_Baseline_Update@button button `*.4S231  1 a 1 wreg ]
+"463
+"461
+[v Button_Baseline_Update@button button `*.4S231  1 a 1 6 ]
+"475
+} 0
+"455
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.4S231  1 a 1 wreg ]
+[v Button_Baseline_Initialize@button button `*.4S231  1 a 1 wreg ]
+"457
+"455
+[v Button_Baseline_Initialize@button button `*.4S231  1 a 1 11 ]
+"459
+} 0
+"428
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.4S231  1 a 1 wreg ]
+[v Button_Reading_Update@button button `*.4S231  1 a 1 wreg ]
+"430
+"428
+[v Button_Reading_Update@button button `*.4S231  1 a 1 10 ]
+"440
+} 0
+"442
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update_Helper@button button `*.4S231  1 a 1 wreg ]
+[v Button_Reading_Update_Helper@button button `*.4S231  1 a 1 wreg ]
+"444
+"442
+[v Button_Reading_Update_Helper@button button `*.4S231  1 a 1 9 ]
+"453
+} 0
+"572 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E11929  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E11929  1 a 1 wreg ]
+"574
+[v MTOUCH_Sensor_RawSample_Get@name name `E11929  1 a 1 6 ]
+"580
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"379 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+[s S231 . 16 `DCE11928 1 name 1 0 `DCE11866 1 sensor 1 1 `E11991 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Deviation_Update@button button `*.4S231  1 a 1 wreg ]
+"381
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 11 ]
+"379
+[v Button_Deviation_Update@button button `*.4S231  1 a 1 wreg ]
+"383
+"379
+[v Button_Deviation_Update@button button `*.4S231  1 a 1 10 ]
+"399
+} 0
+"52 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"78
+} 0
+"197 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"214
+} 0
+"216
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"238
+} 0
+"252
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"258
+} 0
+"250
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"260
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"262
+} 0
+"240
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+{
+"248
+} 0
+"307 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/adcc.c
+[v _ADCC_ThresholdISR ADCC_ThresholdISR `(v  1 e 1 0 ]
+{
+"314
+} 0
+"319
+[v _ADCC_DefaultInterruptHandler ADCC_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"322
+} 0
+"489 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _ADCC_ThresholdISR_mTouch ADCC_ThresholdISR_mTouch `(v  1 e 1 0 ]
+{
+"494
+} 0
+"502
+[v _MTOUCH_Sensor_Service MTOUCH_Sensor_Service `T(v  1 s 1 MTOUCH_Sensor_Service ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"504
+[v MTOUCH_Sensor_Service@sensor sensor `*.4S925  1 a 1 12 ]
+"553
+} 0
+"357
+[v i1_Sensor_scheduleNextScan Sensor_scheduleNextScan `(v  1 s 1 i1_Sensor_scheduleNextScan ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+"359
+[v i1Sensor_scheduleNextScan@sensor sensor `*.4S925  1 a 1 9 ]
+"360
+[v i1Sensor_scheduleNextScan@skipScan skipScan `a  1 a 1 8 ]
+"361
+[v i1Sensor_scheduleNextScan@state state `a  1 a 1 7 ]
+"410
+} 0
+"839
+[v i1_Sensor_isCalibrated Sensor_isCalibrated `T(a  1 s 1 i1_Sensor_isCalibrated ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v i1Sensor_isCalibrated@sensor sensor `*.4S925  1 a 1 wreg ]
+[v i1Sensor_isCalibrated@sensor sensor `*.4S925  1 a 1 wreg ]
+"841
+"839
+[v i1Sensor_isCalibrated@sensor sensor `*.4S925  1 a 1 1 ]
+"842
+} 0
+"208
+[v i1_Sensor_SetTrisBit Sensor_SetTrisBit `(v  1 s 1 i1_Sensor_SetTrisBit ]
+{
+[v i1Sensor_SetTrisBit@sensor sensor `E11929  1 a 1 wreg ]
+[v i1Sensor_SetTrisBit@sensor sensor `E11929  1 a 1 wreg ]
+[v i1Sensor_SetTrisBit@TrisBit TrisBit `uc  1 p 1 0 ]
+[v i1Sensor_SetTrisBit@sensor sensor `E11929  1 a 1 3 ]
+"217
+} 0
+"879
+[v i1_MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v i1MTOUCH_Sensor_wasSampled@sensor sensor `E11929  1 a 1 wreg ]
+[v i1MTOUCH_Sensor_wasSampled@sensor sensor `E11929  1 a 1 wreg ]
+"881
+[v i1MTOUCH_Sensor_wasSampled@sensor sensor `E11929  1 a 1 4 ]
+"885
+} 0
+"767
+[v i1_MTOUCH_Sensor_isEnabled MTOUCH_Sensor_isEnabled `(a  1 e 1 0 ]
+{
+[v i1MTOUCH_Sensor_isEnabled@sensor sensor `E11929  1 a 1 wreg ]
+[v i1MTOUCH_Sensor_isEnabled@sensor sensor `E11929  1 a 1 wreg ]
+"769
+[v i1MTOUCH_Sensor_isEnabled@sensor sensor `E11929  1 a 1 4 ]
+"773
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v i1___bmul@product product `uc  1 a 1 2 ]
+"4
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v i1___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"892 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setSampled@sensor sensor `*.4S925  1 a 1 wreg ]
+[v Sensor_setSampled@sensor sensor `*.4S925  1 a 1 wreg ]
+"894
+"892
+[v Sensor_setSampled@sensor sensor `*.4S925  1 a 1 0 ]
+"895
+} 0
+"419
+[v _Sensor_autoCalibration Sensor_autoCalibration `(E11931  1 s 1 Sensor_autoCalibration ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_autoCalibration@sensor sensor `*.4S925  1 a 1 wreg ]
+"421
+[v Sensor_autoCalibration@name name `E11929  1 a 1 8 ]
+"419
+[v Sensor_autoCalibration@sensor sensor `*.4S925  1 a 1 wreg ]
+"421
+"419
+[v Sensor_autoCalibration@sensor sensor `*.4S925  1 a 1 9 ]
+"461
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\abs.c
+[v i1_abs abs `(i  1 e 2 0 ]
+{
+[v i1abs@a a `i  1 p 2 0 ]
+"4
+} 0
+"857 C:\Users\JRyu\Desktop\2025\yjk\Mtouch.X\mcc_generated_files/mtouch/mtouch_sensor.c
+[v i1_Sensor_isCalibratingAcqTime Sensor_isCalibratingAcqTime `T(a  1 s 1 i1_Sensor_isCalibratingAcqTime ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v i1Sensor_isCalibratingAcqTime@sensor sensor `*.4S925  1 a 1 wreg ]
+[v i1Sensor_isCalibratingAcqTime@sensor sensor `*.4S925  1 a 1 wreg ]
+"859
+"857
+[v i1Sensor_isCalibratingAcqTime@sensor sensor `*.4S925  1 a 1 0 ]
+"861
+} 0
+"844
+[v _Sensor_setCalibrated Sensor_setCalibrated `(v  1 s 1 Sensor_setCalibrated ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setCalibrated@sensor sensor `*.4S925  1 a 1 wreg ]
+[v Sensor_setCalibrated@sensor sensor `*.4S925  1 a 1 wreg ]
+"846
+"844
+[v Sensor_setCalibrated@sensor sensor `*.4S925  1 a 1 0 ]
+"848
+} 0
+"850
+[v _Sensor_setCalibratAcqTime Sensor_setCalibratAcqTime `(v  1 s 1 Sensor_setCalibratAcqTime ]
+{
+[s S925 . 9 `DCE11929 1 sensor_name 1 0 `DCuc 1 adpch 1 1 `uc 1 precharge_time 1 2 `uc 1 acquisition_time 1 3 `uc 1 oversampling 1 4 `uc 1 addcap 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+`uc 1 calibrated 1 8 :1:3 
+`uc 1 acqTime_cal 1 8 :1:4 
+]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.4S925  1 a 1 wreg ]
+[v Sensor_setCalibratAcqTime@sensor sensor `*.4S925  1 a 1 wreg ]
+"852
+"850
+[v Sensor_setCalibratAcqTime@sensor sensor `*.4S925  1 a 1 0 ]
+"855
+} 0
