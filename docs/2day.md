@@ -46,7 +46,13 @@ MAX3232 = TTL ↔ RS-232 레벨 변환기. PC와 MCU를 안전하게 이어주�
 3. 그라운드를 서로 연결하여 기준 전압을 맞춥니다. ( 필요시 납땜질 해야함) 
 4. 코드를 하나 작성하여 mcu내에 write 합니다.
 5. serial monitor를 위해 ebterminal을 사용합니다.
-6. 
+6. usb to serial 의 드라이버 설치를 통해 port를 활성화합니다.
+7. baud rate를 pc와 euart간 맞추어 통신을 하도록 합니다.
+
+
+![image](https://github.com/user-attachments/assets/f75e8503-f482-4b8f-ba9c-7989a086e590)
+
+   
 
 
 
