@@ -24,3 +24,4 @@ Conductive Humidity Sensor 제작을 위한 MCU 기반 회로 구성 및 펌웨�
 |------|------|------|-------|
 | Day 1 | MCC, LED 제어 | MCC 핀 설정, 회로도 보기, LED 켜기 |[링크](./docs/1day.md) |
 | Day 2 | ADC, EUART, Timer , MTouch | 시리얼 통신으로 값 출력, 타이머로 시간 측정 | [링크](./docs/2day.md) | 
+| Day 3 | BreadBoard , 스탭모터 , pwm | 빵판에 연결된 모터모듈을 사용하여 스탭모터 동작시킨다. | [링크](./docs/3day.md) | 
