@@ -1,56 +1,97 @@
 # 2Day 
 ---
 
-## EUART ##
+## 💬 EUART란?
 
-PCB 내 MCU를 통해 외부와 입출력등의 통신을 할 수 있는 장치 (레지스터) 
+MCU 내부에 있는 **시리얼 통신 모듈**로, 외부와 입출력 통신을 할 수 있는 장치 (레지스터 기반).  
+→ UART(Universal Asynchronous Receiver/Transmitter)의 일종이며,  
+**디지털 데이터를 송수신**하는 데 사용됨. 디버깅에도 아주 많이 쓰임!
 
-**용어 정리**
+---
 
-- TX	: Transmit	데이터를 보내는 선
-- RX	: Receive	데이터를 받는 선
-- TP : Test Point 핀을 직접 연결하지 않아도 내부 신호 모니터링 가능한 지점을 만들어 둔것
-  
+## 🧠 용어 정리
 
-### 시리얼 디버깅  ###
-컴퓨터와 MCU간의 신호가 정상동작 하는지 디버깅 하는 방법으로 EUART를 통해 디버깅하는방법 
-가장 기본적인 MCU 디버깅 방식으로 회로가 정상 작동하는지 덤으로 체크할 수 있다. 
+| 용어 | 의미 | 비고 |
+|------|------|------|
+| **TX** | Transmit | 데이터를 **보내는 선 (MCU 기준)** |
+| **RX** | Receive | 데이터를 **받는 선 (MCU 기준)** |
+| **TP** | Test Point | 핀을 직접 납땜하지 않고도 신호를 꺼내거나 분석할 수 있게 만든 중간 포인트 |
+| **RXD1** | Net 이름 | RC7 TX 출력 신호가 지나가는 회로망 이름 |
+| **R1OUT** | MAX3232 핀 이름 | RS-232 신호를 TTL로 변환해서 **MCU or USB로 출력**하는 핀 |
 
-**요약**
+---
 
-mcu (rc7 tx 활성화) --- rxd1( 네트명) ---- tp1 ---- max3232 ( ttl to rs232 ) ---- r1out ------rxd1 ----rx --- pc (usb 포트 ) 
+## 🛠️ 시리얼 디버깅이란?
 
-![image](https://github.com/user-attachments/assets/6e5edead-b270-41cc-bc50-84a3a751245c)
+> **MCU의 내부 상태를 외부로 출력해서 확인하는 가장 기본적인 디버깅 방법**  
+> `printf()` 같은 명령을 통해 문자열을 보내고,  
+> PC에서 이를 **터미널 프로그램(EBTerminal 등)**으로 확인함.
 
-<details> 
-<summary>max3232 & rs232 , ttl </summary>
+---
 
-### max3232 ###
-MAX3232 = TTL ↔ RS-232 레벨 변환기. PC와 MCU를 안전하게 이어주는 다리! 레벨 시프터! 
+## 🔁 시리얼 디버깅 회로 흐름 요약
 
-### rs232  & TTL ### 
-| 구분       | RS-232                          | TTL                                |
-|------------|----------------------------------|-------------------------------------|
-| 역할       | PC나 장비 간 통신 표준           | MCU가 쓰는 논리 신호 레벨           |
-| 전압 범위  | ±3V ~ ±12V                      | 0V ~ 5V 또는 3.3V                   |
-| 신호 의미  | +전압 = 0, -전압 = 1 (역전됨!)   | 0V = 0, 5V = 1 (직관적)             |
-| 목적       | 멀리, 강하게 보내는 통신         | MCU 내부나 짧은 거리 신호 처리      |
-| 필요 회로  | RS-232는 레벨 변환 회로 필요 (ex. MAX3232) | MCU 간 바로 연결 가능    |
+> ✅ 이 회로는 **MCU → PC 방향 단방향 통신**으로  
+> **"RC7 → MAX3232 → USB 시리얼 → EBTerminal"** 구조입니다.
 
+```plaintext
+🔹 MCU (RC7 - TX)
+    ⬇️
+🔸 RXD1 (Net Name)
+    ⬇️
+🔹 TP1 (Test Point)
+    ⬇️
+🔸 MAX3232 (R1OUT)
+    ⬇️
+🔹 USB to Serial (RX Pin)
+    ⬇️
+💻 PC (EBTerminal)
 
-</details> 
-
-
-1. mcu를 통해 rc7번포트를 활성화 합니다!
-2. max3232에서 r1out과 usb to serial 의 rxd를 연결합니다 (필요시 납떔질 해야함)
-3. 그라운드를 서로 연결하여 기준 전압을 맞춥니다. ( 필요시 납땜질 해야함) 
-4. 코드를 하나 작성하여 mcu내에 write 합니다.
-5. serial monitor를 위해 ebterminal을 사용합니다.
-6. usb to serial 의 드라이버 설치를 통해 port를 활성화합니다.
-7. baud rate를 pc와 euart간 맞추어 통신을 하도록 합니다.
+```
 
 
-![image](https://github.com/user-attachments/assets/f75e8503-f482-4b8f-ba9c-7989a086e590)
+- ✅ 실제로는 MCU의 TX 신호가 MAX3232를 통해 **R1OUT으로 나감**
+- ✅ 그걸 PC 쪽 USB 시리얼 모듈이 **RX로 받아들이는 구조**임!
+- ✔️ 이 회로는 **RX 기능이 꺼진 상태(EUSART 수신 비활성)**이기 때문에 → TX 단방향만 사용함
+
+---
+
+## 📦 관련 개념
+
+<details>
+<summary><strong>🔌 MAX3232, RS-232, TTL 차이</strong></summary>
+
+### ✅ MAX3232
+- TTL ↔ RS-232 레벨 변환기
+- MCU와 PC/장비 간 안전한 시리얼 통신 연결을 도와줌
+
+### ✅ RS-232 vs TTL
+
+| 항목 | RS-232 | TTL |
+|------|--------|-----|
+| 전압 범위 | ±3V ~ ±12V | 0 ~ 5V (또는 3.3V) |
+| 논리 | +V = 0, –V = 1 (역전됨) | 0V = 0, 5V = 1 (직관적) |
+| 거리 | 길게 가능 (노이즈 강함) | 짧은 거리용 |
+| 용도 | PC, 장비 통신 | MCU, 센서 통신 |
+| 직접 연결 | ❌ (MCU 고장 위험) | ✅
+
+</details>
+
+---
+
+## ✅ 실습 순서 (Checklist)
+
+1. **MCU TX 핀(RC7)**을 활성화하고, EUSART 설정을 완료
+2. RC7 → `RXD1(Net)` → **TP1** → MAX3232 내부 → **R1OUT**에 연결
+3. **R1OUT → USB to Serial 모듈의 RX**에 연결 (필요시 납땜)
+4. **GND도 반드시 연결 (MCU ↔ MAX3232 ↔ USB 모듈 모두)** ✅
+5. `printf()` 또는 `EUSART_Write()`로 문자열 출력 코드 작성 후 빌드
+6. EBTerminal 실행 → 드라이버 설치된 COM 포트 선택
+7. Baudrate 일치 여부 확인 (MCU와 PC 모두 예: 9600 or 115200)
+8. **EBTerminal 창에서 데이터가 찍히는지 확인**
+
+
+
 
    
 
