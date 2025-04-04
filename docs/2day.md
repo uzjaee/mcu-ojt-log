@@ -1,7 +1,7 @@
 # 2Day 
 ---
 
-## 💬 EUART란?
+# 💬 EUART란?
 
 MCU 내부에 있는 **시리얼 통신 모듈**로, 외부와 입출력 통신을 할 수 있는 장치 (레지스터 기반).  
 → UART(Universal Asynchronous Receiver/Transmitter)의 일종이며,  
@@ -79,7 +79,7 @@ MCU 내부에 있는 **시리얼 통신 모듈**로, 외부와 입출력 통신�
 
 ---
 
-## ✅ 실습 순서 (Checklist)
+## ✅ 실습 ##
 
 1. **MCU TX 핀(RC7)**을 활성화하고, EUSART 설정을 완료
 2. RC7 → `RXD1(Net)` → **TP1** → MAX3232 내부 → **R1OUT**에 연결
@@ -95,26 +95,90 @@ MCU 내부에 있는 **시리얼 통신 모듈**로, 외부와 입출력 통신�
 
    
 
-
-
-
-
-
 **주의!**  
 시리얼 통신과 시리얼 디버깅은 비슷하면서도 다르다!
 시리얼 디버깅을 했다는것은 단방향으로 통신했다는 뜻이고 시리얼 통신은 양방향 ( tx /rx) 모두 연결시켰다는 의미이다. 
 
 
-### 샘플링 
 
 
+# ⚡ ADC (Analog to Digital Converter)
+
+아날로그 신호(0~5V)는 부드럽게 연속적으로 바뀌는 값이라  
+MCU는 이 값을 직접 인식할 수 없습니다.
+
+✅ 그래서 아날로그 값을 **디지털 숫자(이산 값)**으로 바꿔주는 장치가 필요하며,  
+그 역할을 하는 것이 바로 **ADC (Analog to Digital Converter)**입니다.
+
+---
+
+## 🔢 아날로그 → 디지털 변환 (10비트 기준)
+
+| 아날로그 전압 | 디지털 값 (ADC 출력) |
+|---------------|------------------------|
+| 0V            | 0                      |
+| 5V            | 1023                   |
+
+➡️  0~5V 범위를 1024단계(0~1023)로 나누어 표현한다고 이해하면 됩니다.
+
+---
+
+## 🧮 ADC 계산법 설명
+
+**전압 → 디지털 값 변환:**
+
+![image](https://github.com/user-attachments/assets/b4607024-6696-4e96-8378-40adb9bc6485)
+
+![image](https://github.com/user-attachments/assets/7a30db1e-97b9-496c-87f7-08b63bf6eebc)
+
+기준전력으로 나눈 값을 디지털의 기준이 단계의 최대단계 값을 곱해주면 몇단계의 값인지 알수있다. 
 
 
-## ADC ## 
-Analog to digital converter의 약자로 
+---
+## 📚 관련 개념 정리
+
+<details>
+<summary><strong>🔍 샘플링(Sampling) & 스케일링(Scaling)</strong></summary>
+
+- **샘플링**  
+  → 언제 아날로그 값을 읽을지 결정하는 것 (ex: 1초마다 한 번 읽기)
+
+- **스케일링**  
+  → ADC 결과값을 **전압, 온도, 밝기 등 의미 있는 값으로 바꾸는 과정**
+
+💡 예시  
+1초 단위로 샘플링하여 ADC값을 받아서 전압을 계산했다면  
+→ 샘플링 + 스케일링을 둘 다 수행한 것!
+</details>
+
+---
+
+## 🔧 실습 코드 예제 (MPLAB XC8)
+
+```c
+uint16_t ADCvalue;
+
+while (1)
+{
+    // 1. ADC 값 읽기
+    ADCvalue = ADCC_GetSingleConversion(channel_ANA0);
+
+    // 2. 전압 계산
+    float voltage = ((float)ADCvalue / 1023.0f) * 5.0;
+
+    // 3. 시리얼로 디버깅 출력
+    printf("Voltage: %.2f V\n", voltage);
+    printf("ADCvalue is %d \n\r" , ADCvalue);
+
+    __delay_ms(1000);
+}
+```
 
 
+시리얼 모니터(EBTerminal)에서는 다음과 같이 출력됩니다.  
+![image](https://github.com/user-attachments/assets/cd5f4e95-bc7a-46bf-ae0e-262f2a75d254)
 
+ 
 
 ## TImer ## 
 
